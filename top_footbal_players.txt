@@ -1,3 +1,0 @@
-echo "Ronaldo" >> top_football_players
-echo "Messi" >> top_football_players
-echo "Neymar" >> top_football_players
