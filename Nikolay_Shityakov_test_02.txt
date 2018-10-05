@@ -1,0 +1,29 @@
+1) Basically it takes user and group rights and removes write rights which will leave only R R R for user,group,and eveyone else
+
+2)1 chmod u-r testmk 
+chmod g-w testmk 
+chmod o-r testmk 
+chmod o+x testmk 
+2.2)chmod u-rw,g-rw,g+x,o+wx testmk 
+
+2.3) chmod a-rwx,u+w testmk 
+
+3.1 
+640
+711
+561
+
+4)
+1) They will not have tights at all 777-777=0
+2) 022 is the standart root umask which gives all the priveleges 
+for the directory it will give drwxr-xr-x  rights for the file 
+-rw-r--r--
+
+5)sudo groupadd mygroup
+[sudo] password for nikolay: 
+
+sudo chgrp mygroup mygroup
+drwxr-xr-x 2 nikolay mygroup 4096 oct  5 13:39  mygroup
+
+
+6)
